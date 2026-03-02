@@ -179,7 +179,7 @@ export default function App() {
                   poster="https://images.pexels.com/photos/7564243/pexels-photo-7564243.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                 >
                   <source
-                    src="https://player.vimeo.com/external/517090025.sd.mp4?s=f0db00bf239750e145728865d67a637a544f808c&profile_id=165&oauth2_token_id=57447761"
+                    src="/hero-video.mp4"
                     type="video/mp4"
                   />
                   Ваш браузер не поддерживает тег video.
