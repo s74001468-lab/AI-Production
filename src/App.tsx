@@ -340,16 +340,21 @@ export default function App() {
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <div className="aspect-[3/4] rounded-xl bg-slate-100 flex items-center justify-center overflow-hidden relative">
-                    <img src="https://picsum.photos/seed/bottle/400/600" alt="До" className="object-cover w-full h-full opacity-80 grayscale" referrerPolicy="no-referrer" />
-                    <div className="absolute top-2 left-2 bg-black/50 text-white text-xs px-2 py-1 rounded backdrop-blur-sm">ДО (Фото на белом фоне)</div>
+                    <img src="/case-serum-before.jpg" alt="До" className="object-cover w-full h-full opacity-80" referrerPolicy="no-referrer" />
+                    <div className="absolute top-2 left-2 bg-black/50 text-white text-xs px-2 py-1 rounded backdrop-blur-sm">ДО (Обычное фото)</div>
                   </div>
                 </div>
                 <div className="space-y-2">
                   <div className="aspect-[3/4] rounded-xl bg-slate-800 flex items-center justify-center overflow-hidden relative ring-2 ring-blue-500">
-                    <img src="https://picsum.photos/seed/water/400/600" alt="После" className="object-cover w-full h-full" referrerPolicy="no-referrer" />
-                    <div className="absolute inset-0 flex items-center justify-center bg-black/20">
-                      <PlayCircle size={48} className="text-white opacity-80" />
-                    </div>
+                    <video
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="h-full w-full object-cover"
+                    >
+                      <source src="/case-serum-after.mp4" type="video/mp4" />
+                    </video>
                     <div className="absolute top-2 left-2 bg-blue-600 text-white text-xs px-2 py-1 rounded shadow-lg">ПОСЛЕ (AI-Видео)</div>
                   </div>
                 </div>
