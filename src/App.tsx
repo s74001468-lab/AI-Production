@@ -170,11 +170,20 @@ export default function App() {
             {/* Video Placeholder / Visual */}
             <div className="relative mx-auto w-full max-w-lg lg:max-w-none">
               <div className="aspect-[4/5] overflow-hidden rounded-3xl bg-slate-100 shadow-2xl ring-1 ring-slate-900/5 sm:aspect-[16/9] lg:aspect-[4/5]">
-                <div className="absolute inset-0 flex flex-col items-center justify-center bg-slate-800 text-white">
-                  <Play size={64} className="mb-4 opacity-50" />
-                  <p className="font-mono text-sm uppercase tracking-widest opacity-70">AI Video Placeholder</p>
-                  <p className="mt-2 text-xs opacity-50">Sora 2 / Veo 3.1 Output</p>
-                </div>
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="h-full w-full object-cover"
+                  poster="https://images.pexels.com/photos/7564243/pexels-photo-7564243.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                >
+                  <source
+                    src="https://player.vimeo.com/external/517090025.sd.mp4?s=f0db00bf239750e145728865d67a637a544f808c&profile_id=165&oauth2_token_id=57447761"
+                    type="video/mp4"
+                  />
+                  Ваш браузер не поддерживает тег video.
+                </video>
               </div>
               {/* Floating Badge */}
               <div className="absolute -bottom-6 -left-6 rounded-2xl bg-white p-4 shadow-xl ring-1 ring-slate-900/5">
