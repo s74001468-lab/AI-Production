@@ -170,20 +170,21 @@ export default function App() {
             {/* Video Placeholder / Visual */}
             <div className="relative mx-auto w-full max-w-lg lg:max-w-none">
               <div className="aspect-[4/5] overflow-hidden rounded-3xl bg-slate-100 shadow-2xl ring-1 ring-slate-900/5 sm:aspect-[16/9] lg:aspect-[4/5]">
-                <video
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  className="h-full w-full object-cover"
-                  poster="https://images.pexels.com/photos/7564243/pexels-photo-7564243.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                >
-                  <source
-                    src="/hero-video.mp4"
-                    type="video/mp4"
-                  />
-                  Ваш браузер не поддерживает тег video.
-                </video>
+                    <video
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      preload="auto"
+                      className="h-full w-full object-cover"
+                      poster="https://images.pexels.com/photos/7564243/pexels-photo-7564243.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    >
+                      <source
+                        src="/hero-video.mp4"
+                        type="video/mp4"
+                      />
+                      Ваш браузер не поддерживает тег video.
+                    </video>
               </div>
               {/* Floating Badge */}
               <div className="absolute -bottom-6 -left-6 rounded-2xl bg-white p-4 shadow-xl ring-1 ring-slate-900/5">
@@ -308,16 +309,22 @@ export default function App() {
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <div className="aspect-[3/4] rounded-xl bg-slate-100 flex items-center justify-center overflow-hidden relative">
-                    <img src="https://picsum.photos/seed/bag/400/600" alt="До" className="object-cover w-full h-full opacity-80 grayscale" referrerPolicy="no-referrer" />
+                    <img src="/case-bag-before.jpg" alt="До" className="object-cover w-full h-full opacity-80" referrerPolicy="no-referrer" />
                     <div className="absolute top-2 left-2 bg-black/50 text-white text-xs px-2 py-1 rounded backdrop-blur-sm">ДО (Обычное фото)</div>
                   </div>
                 </div>
                 <div className="space-y-2">
                   <div className="aspect-[3/4] rounded-xl bg-slate-800 flex items-center justify-center overflow-hidden relative ring-2 ring-blue-500">
-                    <img src="https://picsum.photos/seed/fashion/400/600" alt="После" className="object-cover w-full h-full" referrerPolicy="no-referrer" />
-                    <div className="absolute inset-0 flex items-center justify-center bg-black/20">
-                      <PlayCircle size={48} className="text-white opacity-80" />
-                    </div>
+                    <video
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      preload="auto"
+                      className="h-full w-full object-cover"
+                    >
+                      <source src="/case-bag-after.mp4" type="video/mp4" />
+                    </video>
                     <div className="absolute top-2 left-2 bg-blue-600 text-white text-xs px-2 py-1 rounded shadow-lg">ПОСЛЕ (AI-Видео)</div>
                   </div>
                 </div>
